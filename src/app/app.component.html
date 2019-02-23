@@ -1,0 +1,56 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul> -->
+
+
+<!-- <div class = "container"> -->
+  <div class="row">
+    <div class="col-lg-4" style="list-style-type: none;">
+      <li class="image item itemNo0 maintain-height selected" style="cursor: pointer;"><span class="a-list-item">
+        <span class="a-declarative" data-action="main-image-click" data-main-image-click="{}">
+            <div id="imgTagWrapperId" class="imgTagWrapper" style="height: 396px;">
+                <img alt="HOLME'S Kettle TSQ0051/Electric Kettle/Kettle/Tea Kettle/Tea and Coffee Maker/Milk Boiler/Water Boiler/Tea Boiler/Coffee Boiler/Water Heater/Stainless Steel Kettle/1.8 Liter Stainless Steel"
+                [src]="getVaue.image" data-old-hires="https://images-na.ssl-images-amazon.com/images/I/511U9YLEaUL._SL1000_.jpg" class="a-dynamic-image  a-stretch-vertical" id="landingImage" data-a-dynamic-image="{&quot;https://images-na.ssl-images-amazon.com/images/I/511U9YLEaUL._SX569_.jpg&quot;:[569,569],&quot;https://images-na.ssl-images-amazon.com/images/I/511U9YLEaUL._SX425_.jpg&quot;:[425,425],&quot;https://images-na.ssl-images-amazon.com/images/I/511U9YLEaUL._SX466_.jpg&quot;:[466,466],&quot;https://images-na.ssl-images-amazon.com/images/I/511U9YLEaUL._SY355_.jpg&quot;:[355,355],&quot;https://images-na.ssl-images-amazon.com/images/I/511U9YLEaUL._SY450_.jpg&quot;:[450,450],&quot;https://images-na.ssl-images-amazon.com/images/I/511U9YLEaUL._SX679_.jpg&quot;:[679,679],&quot;https://images-na.ssl-images-amazon.com/images/I/511U9YLEaUL._SX522_.jpg&quot;:[522,522]}" style="max-width: 396px; max-height: 396px;">
+            </div>
+        </span>
+    </span></li>
+    </div>
+
+    <div class="col-lg-4" style="list-style-type: none;">
+        <div class="row">
+            <div  class="col-lg-12">
+              <mat-form-field>
+                  <mat-select placeholder="Select Your Size" (selectionChange)="doSomething($event)" [formControl]="selected" >
+                    <mat-option *ngFor="let data of dataTable" [value]="data.id">
+                      {{data.size}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+          </div>
+          <div  class="col-lg-12">
+
+            <h3>Price: {{getVaue.price}}</h3>
+          </div>
+          </div>
+  </div>
+    
+  </div>
+
+
+<!-- </div> -->
